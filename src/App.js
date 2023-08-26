@@ -16,7 +16,7 @@ function App() {
           <a className="App-link" href="https://www.instagram.com/ifurandesuu">
             Saya
           </a>{" "}
-          sedang mencoba library ReactJS
+          sedang <span title="latihan">mencoba</span> library ReactJS
         </p>
       </header>
     </div>

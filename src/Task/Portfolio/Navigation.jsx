@@ -4,7 +4,7 @@ const Navigation = () => {
   return (
     <Navbar expand="lg" className="Navbar bg-dark" variant="dark" fixed="top">
       <Container>
-        <Navbar.Brand href="#" className="Brand">
+        <Navbar.Brand href="#" className="Brand" title="deshyoo..">
           Ifurandesu
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

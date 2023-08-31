@@ -66,7 +66,7 @@ const Maincontent = () => {
                   </a>
                 </li>
                 <li className="Contact-list-links">
-                  <a href="#Telegram" className="Contact-link">
+                  <a href="#Telegram" className="Contact-link" title="lupa linknya..">
                     Telegram
                   </a>
                 </li>
@@ -79,7 +79,7 @@ const Maincontent = () => {
             </div>
           </div>
         </div>
-        <p className="Footer-description">Handcrafted by me &copy; ifurandesu</p>
+        <p className="Footer-description">Handcrafted by me &copy; Ifurandesu</p>
       </div>
     </div>
   );

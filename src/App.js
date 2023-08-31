@@ -1,10 +1,12 @@
-import Component from "./Task";
+import Navigation from "./Task/Portfolio/Navigation";
+import Maincontent from "./Task/Portfolio/Maincontent";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Component></Component>
+    <div>
+      <Navigation></Navigation>
+      <Maincontent></Maincontent>
     </div>
   );
 }

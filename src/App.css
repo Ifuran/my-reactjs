@@ -1,86 +1,95 @@
-/* .App {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Navigation  */
+.Navbar {
+  letter-spacing: 0.5px;
+}
+
+.Brand {
+  font-weight: 700;
+}
+
+/* Hero  */
+.Hero {
   text-align: center;
+  padding: 125px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hero h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About  */
+.About {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.About h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.About p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.Contact h4,
+.Skills h4 {
+  font-weight: 700;
+}
+
+.Contact-list,
+.Skills-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Contact-list li,
+.Skills-list li {
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.Header {
-  background-color: blue;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 5px 0;
+.Portfolio-wrapper a {
+  font-weight: 700;
 }
 
-.Header a {
-  color: ghostwhite;
-  text-decoration: none;
+.divider {
+  background-color: pink;
 }
 
-.Container {
-  margin-left: 15%;
+/* Contact  */
+.Contact {
+  padding: 25px;
 }
 
-.Container h1 {
-  display: inline-block;
-  background-color: yellow;
-}
-
-.Btn {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
+.Contact-list-links a {
+  padding: 5px 20px;
   color: #fff;
 }
 
-.ValueAngka {
-  margin: 50px;
-  font-size: 1.2rem;
-  font-weight: bold;
+.Contact-list-links a:hover {
+  color: #000;
 }
 
+/* Footer  */
 .Footer {
-  background-color: blue;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 5px 0;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  padding-bottom: 100px;
 }

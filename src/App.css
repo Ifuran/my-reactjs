@@ -66,6 +66,7 @@
 .Contact-list li,
 .Skills-list li {
   list-style-type: none;
+  align-self: center;
 }
 
 .Portfolio-wrapper a {

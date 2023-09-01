@@ -57,6 +57,7 @@
 .Contact-list,
 .Skills-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   gap: 15px;

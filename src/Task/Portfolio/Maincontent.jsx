@@ -1,6 +1,18 @@
 import Hero from "./Hero";
+import React, { useState } from "react";
+import Modalcomponent from "./Modalcomponent";
 
 const Maincontent = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div>
       <Hero></Hero>
@@ -43,9 +55,10 @@ const Maincontent = () => {
         <div className="Skills">
           <h4 className="Portfolio py-3">Projects I build</h4>
           <div className="Portfolio-wrapper">
-            <a href="#Portfolio" className="Portfolio-btn btn btn-secondary" title="soon..">
+            <button onClick={openModal} className="Portfolio-btn btn btn-secondary">
               My Projects
-            </a>
+            </button>
+            <Modalcomponent show={showModal} onClose={closeModal} />
           </div>
         </div>
       </div>

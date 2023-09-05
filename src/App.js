@@ -1,12 +1,11 @@
+import FormElement from "./Task/Form/FormElement";
 import Navigation from "./Task/Portfolio/Navigation";
-import Maincontent from "./Task/Portfolio/Maincontent";
-import "./App.css";
 
 function App() {
   return (
     <div>
       <Navigation></Navigation>
-      <Maincontent></Maincontent>
+      <FormElement nama="Ifuran"></FormElement>
     </div>
   );
 }

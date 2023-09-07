@@ -1,11 +1,9 @@
-import FormElement from "./Task/Form/FormElement";
-import Navigation from "./Task/Portfolio/Navigation";
+import Component from "./Task";
 
 function App() {
   return (
     <div>
-      <Navigation></Navigation>
-      <FormElement nama="Ifuran"></FormElement>
+      <Component></Component>
     </div>
   );
 }

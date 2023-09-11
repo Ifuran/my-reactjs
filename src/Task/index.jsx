@@ -1,15 +1,26 @@
-import "./Website/Style.css";
-import React from "react";
-import Navigation from "./Website/Navigation";
-import Content from "./Website/Content";
+import "./WebsiteBerita/Style.css";
+import Navigation from "./WebsiteBerita/Navigation";
+import Content from "./WebsiteBerita/Content";
+import Projects from "./WebsiteBerita/Projects";
+import About from "./WebsiteBerita/About";
+import Contact from "./WebsiteBerita/Contact";
 
-export default class Component extends React.Component {
-  render() {
-    return (
-      <div>
-        <Navigation></Navigation>
-        <Content></Content>
-      </div>
-    );
-  }
-}
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+const Component = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Content />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};
+
+export default Component;
